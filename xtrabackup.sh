@@ -75,6 +75,7 @@ else
     echo "full backup complete!! and the root dir is $subdir"  >> $basedir/bak.log
 fi
 #删除以前的备份
+cd $basedir
 if [ $((${week}-2)) -gt 0 ];
 then
     if [ -d ${year}_$((${week}-2)) ];
